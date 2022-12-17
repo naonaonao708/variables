@@ -1,12 +1,7 @@
-fn main() {
-    let x = 5;
+fn main() { 
+    another_function(5);
+}
 
-    let x = x + 1;
-
-    {
-        let x = x + 2;
-        println!("The value of x in the inner scope is: {}", x);
-    }
-    
+fn another_function(x: i32) {
     println!("The value of x is: {}", x);
 }
